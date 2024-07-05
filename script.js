@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded",
 				.sendGetRequest("name.txt",
 					function (request) {
 						var name = request.responseText;
-						console.log(name);
 						document.querySelector('#content')
 							.innerHTML = "<h2>Hello " + name + "!</h2>";
 					});
